@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.cor {
+    background-color: black;
+    padding: 0.005rem;
+}
+
+.tempo_entrega {
+    color: yellow;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container_titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.titulo_link {
+    color: yellow;
+    padding: 0.1rem;
+    border: solid 3px;
+    border-radius: 8px;
+}
+
+.spp {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-family: 'Nimbus Mono Regular';
+}
+
+.titulo {
+    color: yellow;
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.container_poesia_mais_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto_poesia {
+    width: 20rem;
+    margin-right: 3rem;
+}
+
+.info {
+    text-align: left;
+}
+
+.titulo_info{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+}
+
+.descricao_info {
+    color: white;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.comprar {
+    color: white;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
