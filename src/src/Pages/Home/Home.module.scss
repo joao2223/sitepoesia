@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.cor {
+    background-color: black;
+    padding: 0.005rem;
+}
+
+.tempo_entrega {
+    color: yellow;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container_titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.titulo_link {
+    color: yellow;
+    padding: 0.1rem;
+    border: solid 3px;
+    border-radius: 8px;
+}
+
+.spp {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-family: 'Nimbus Mono Regular';
+}
+
+.titulo {
+    color: yellow;
+    font-weight: 500;
+    font-size: 60px;
+}
+
+.container_poesia_mais_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto_poesia {
+    width: 20rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+.info {
+    text-align: left;
+}
+
+.titulo_info{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+}
+
+.descricao_info {
+    color: white;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.comprar {
+    color: white;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 1rem;
+    border-radius: 8px;
+    background-color: #b603c1;
+}
+
+.container_quantidade{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao {
+    background-color: #b603c1;
+    color: white;
+    border-radius: 16px;
+    margin-bottom: 0.5rem;
+}
+
+.container_modal {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    overflow-x: hidden; /* Adicione esta linha para esconder a barra de rolagem horizontal */
+}
+
+@keyframes newsTicker {
+    0% { transform: translateX(100%); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateX(-100%); opacity: 0; }
+}
+
+.newsTicker-container {
+    overflow: hidden; /* Adicione esta linha para esconder o conteúdo que ultrapassa as dimensões */
+}
+
+.newsTicker {
+    display: inline-block;
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: newsTicker 50000s linear infinite;  // Ajuste a duração conforme necessário
+    margin-top: 1.5rem;
+  }
+  
+  @keyframes newsTicker {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translatex(-100%);
+    }
+  }
+
+  .seuModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .seuModalOverlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .closeButton {
+    background-color: #ccc;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .finalizarButton {
+    background-color: #b603c1;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Estilize os campos do formulário conforme necessário */
+  form {
+    margin-top: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+@media only screen and (max-width: 768px) {
+    .container_poesia_mais_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .container_poesia_mais_info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-height: 100%; /* Mínimo de 100% da altura da viewport */
+        max-width: 100%;
+        margin: 0;
+    }
+    
+}
