@@ -64,8 +64,26 @@
 
 .descricao_info {
     color: white;
-    font-size: 16px;
+    font-size: 13px;
     font-family: 'Open Sans', sans-serif;
+}
+.descricao_info_complemento {
+    color: white;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    width: 5rem;
+}
+
+.descricao_info_cidade {
+    color: white;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    width: 8rem;
+}
+
+.container_num_comp {
+    display: flex;
+    justify-content: space-around;
 }
 
 .comprar {
@@ -114,8 +132,18 @@ body {
     font-family: 'Arial', sans-serif;
     white-space: nowrap;
     overflow: hidden;
-    animation: newsTicker 10s linear infinite;
-}
+    animation: newsTicker 50000s linear infinite;  // Ajuste a duração conforme necessário
+    margin-top: 1.5rem;
+  }
+  
+  @keyframes newsTicker {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translatex(-100%);
+    }
+  }
 
   .seuModal {
     position: absolute;
@@ -126,7 +154,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
+    max-width: 500px;
     width: 100%;
     text-align: center;
   }
@@ -172,3 +200,19 @@ body {
     border-radius: 4px;
     box-sizing: border-box;
   }
+
+@media only screen and (max-width: 768px) {
+    .container_poesia_mais_info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+}
