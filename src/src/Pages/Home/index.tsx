@@ -17,9 +17,7 @@ export default function Home() {
     const [nome, setNome] = useState();
     const [numero, setNumero] = useState();
 
-    //token tt
-    const acc = "APP_USR-3038404304218756-110108-112fe7f251968e596d3c7409aaf7b210-217056547"
-    //rifa const acc = 'APP_USR-475581657188028-071815-8408e2a91f964626a4b56ed758a65abf-180659991'
+   
 
     useEffect(() => {
         axios.get("https://cors-anywhere.herokuapp.com/https://api.mercadopago.com/v1/payment_methods", {
